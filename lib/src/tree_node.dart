@@ -440,7 +440,7 @@ class _TreeNodeExpanderState extends State<_TreeNodeExpander>
         _arrow = Icons.expand_more;
         break;
       case ExpanderType.arrow:
-        _arrow = Icons.arrow_downward;
+        _arrow = widget.expanded ?  Icons.arrow_downward_sharp :Icons.arrow_downward;
         _iconSize = widget.themeData.size > 20
             ? widget.themeData.size - 8
             : widget.themeData.size;
