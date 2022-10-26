@@ -466,8 +466,8 @@ class _TreeNodeExpanderState extends State<_TreeNodeExpander>
       controller.forward();
     }
     return Container(
-      // width: widget.themeData.size + 2,
-      // height: widget.themeData.size + 2,
+      width: widget.themeData.size + 2,
+      height: widget.themeData.size + 2,
       alignment: Alignment.center,
       decoration: BoxDecoration(
         shape: _shapeBorder,
@@ -481,7 +481,7 @@ class _TreeNodeExpanderState extends State<_TreeNodeExpander>
       ),
       child: AnimatedBuilder(
         animation: controller,
-        // child: _icon,
+        child: _icon,
         builder: (context, child) {
           return Transform.rotate(
             angle: animation.value * (-pi / 180),
