@@ -144,17 +144,18 @@ class _TreeNodeState extends State<TreeNode>
       width:
           widget.node.hasIcon ? _theme.iconTheme.size! + _theme.iconPadding : 0,
       child: widget.node.hasIcon
-          ? SvgPicture.asset(
-              widget.node.icon!,
-              height: _theme.iconTheme.size,
-              color: isSelected
-                  ? widget.node.selectedIconColor == null
-                      ? _theme.colorScheme.onPrimary
-                      : widget.node.selectedIconColor
-                  : widget.node.iconColor == null
-                      ? _theme.iconTheme.color
-                      : widget.node.iconColor,
-            )
+          // ? SvgPicture.asset(
+          //     widget.node.icon!,
+          //     height: _theme.iconTheme.size,
+          //     color: isSelected
+          //         ? widget.node.selectedIconColor == null
+          //             ? _theme.colorScheme.onPrimary
+          //             : widget.node.selectedIconColor
+          //         : widget.node.iconColor == null
+          //             ? _theme.iconTheme.color
+          //             : widget.node.iconColor,
+          //   )
+          ? widget.node.icon
           : null,
     );
   }

@@ -22,7 +22,7 @@ class Node<T> {
   final String label;
 
   /// An optional icon that is displayed on the [TreeNode].
-  final String? icon;
+  final Widget? icon;
 
   /// An optional color that will be applied to the icon for this node.
   final Color? iconColor;
@@ -116,7 +116,7 @@ class Node<T> {
     List<Node>? children,
     bool? expanded,
     bool? parent,
-    String? icon,
+    Widget? icon,
     Color? iconColor,
     Color? selectedIconColor,
     T? data,
