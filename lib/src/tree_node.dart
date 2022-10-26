@@ -183,6 +183,7 @@ class _TreeNodeState extends State<TreeNode>
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           icon,
+          SizedBox(width: 5),
           Expanded(
             child: Text(
               widget.node.label,
