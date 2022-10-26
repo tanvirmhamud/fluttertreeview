@@ -481,7 +481,7 @@ class _TreeNodeExpanderState extends State<_TreeNodeExpander>
       ),
       child: AnimatedBuilder(
         animation: controller,
-        child: _icon,
+        // child: _icon,
         builder: (context, child) {
           return Transform.rotate(
             angle: animation.value * (-pi / 180),
